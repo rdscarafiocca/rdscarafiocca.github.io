@@ -1,0 +1,161 @@
+/*RESETEA LOS MARGENES*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+i{
+    margin: 10px;
+}
+
+html{
+    height: 100%;
+    font-family: 'Roboto';
+}
+
+body{
+    background-image: url('../images/blueBackground.jpg');
+    background-size: cover;
+    min-height: 100%;
+}
+
+hr{
+    width: 50%;
+    text-align: left;
+    margin-left: 0;
+}
+
+h1{
+    margin-top: 15px;
+    text-align: center;
+    color:rgb(200, 200, 200, 0.75);
+    font-family: 'Orbitron';
+}
+
+p{
+    text-align: left;
+}
+
+ul { 
+	position: relative; 
+	display: inline-block; 
+	padding-left: 1em; 
+	left: 0%; 
+}
+
+li{
+    margin-top: 5px;
+}
+
+
+.mainPhoto{
+    width:70px;
+    height:90%;
+    margin-left: 30px;
+}
+
+.profile{
+    margin-top: 20px;
+    margin-left: 10px;
+    justify-content: left;
+    clear: left;
+}
+
+.job{
+    height: auto;
+    margin-top: 10px;
+    clear: left;
+    overflow: hidden;
+}
+
+.jobPosition{
+    margin-left: 10px;
+    clear: left;
+}
+
+.jobDescription > *{
+    margin-top: 10px;
+    float: left;
+    margin-left: 10px;
+    justify-content: left;
+    clear: left;
+}
+
+h2,h3,hr,ul, .contact, .profile, .jobPosition, .mainPhoto, .company {
+    float: left;
+    clear: left;
+}
+
+.contact{
+    clear: left;
+    margin-top: 10px;
+}
+
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header{
+    grid-area: header;
+    transition: background-color 1s linear;
+}
+.navbar{
+    grid-area: navbar;
+    background-color: rgb(59, 59, 100, 0.75);
+    color: darkgray;
+    font-family: 'Orbitron';
+    transition: background-color 1s linear;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: rgb(59, 59, 62, 0.75);
+    color:white;
+}
+.main{
+    grid-area: main;
+    background-color: rgb(200, 200, 200, 0.75);
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(59, 59, 62, 0.75);
+}
+
+/*PARA CELULARES*/
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template: 
+        "header"    100px
+        "navbar"    auto
+        "main"      auto
+        "sidebar"   auto
+        "footer"    50px;
+}
+
+/*PARA TABLETS*/
+@media (min-width: 600px){
+    .grid-container{
+        grid-template: 
+        "header header" 100px
+        "navbar navbar" auto
+        "sidebar main"  auto
+        "footer footer" 50px /
+        200px   auto;
+    }
+}
+
+/*PARA ESCRITORIO*/
+@media (min-width: 900px){
+    .grid-container{
+        grid-template: 
+        "header header header" 100px
+        "navbar main sidebar" auto
+        "footer footer footer"  50px /
+        200px   auto   200px;
+    }
+}
+

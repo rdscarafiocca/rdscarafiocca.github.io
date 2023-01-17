@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:image" content="FC.jpg"/>  
+    <meta property="og:title" content="Pedro Gonzalez CV"/>  
+    <meta property="og:description" content="Programador Full-Stack"/>  
+
+    <title>CV</title>
+
+    <link rel="stylesheet" href="styles/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="icon" type="image/x-icon" href="images/cv.ico">
+    
+</head>
+<body class="grid-container">
+
+    <!-- INICIO NOMBRE Y FOTO DEL CANDIDATO -->
+    <header class="header">
+        <img class='mainPhoto' src="images/FC.jpg" alt="Foto CV" height=”500px” width=”300px” /> 
+        <h1>Pedro Gonzalez</h1>
+    </header>
+    <!-- FIN NOMBRE Y FOTO DEL CANDIDATO -->
+
+    <!-- INICIO ESPECIALIDAD Y CONTACTO -->
+    <nav class="navbar">
+        <h2>Programador Full-Stack</h2>
+        <div class="contact">
+            <i class="fa fa-map-marker"> Saavedra, CABA </i>
+            <i class="fa fa-phone"> (11)1234-5678</i>
+            <i class="fa fa-envelope"> pgonzalez@email.com </i>
+        </div>
+    </nav>
+    <!-- FIN ESPECIALIDAD Y CONTACTO -->
+
+    <!-- INICIO HABILIDADES Y EDUCACION -->
+    <aside class="sidebar">
+        <!-- INICIO HABILIDADES-->
+        <div class="profile">
+            <h3>Skills</h3>
+
+            <br>
+            <br>
+            <hr>
+            <br>
+
+            <ul>
+                <li><p>.NET</p></li>
+                <li><p>ASP Core</p></li>
+                <li><p>Javascript</p></li>
+                <li><p>Typescript</p></li>
+                <li><p>HTML</p></li>
+                <li><p>CSS</p></li>
+            </ul>
+        </div>
+        <!-- FIN HABILIDADES -->
+
+        <br><br>
+
+        <!-- INICIO EDUCACION -->
+        <div class="profile">
+            <h3>Educación</h3>
+
+            <br>
+            <br>
+            <hr>
+            <br>
+
+            <ul>
+                <li><p>Ingeniería en informática - UTN (2007 - 2013)</p></li>
+                <li><p>First Certificate in English (2007)</p></li>
+                <li><p>Técnico en computación - Lasalle (2002 - 2007)</p></li>
+            </ul>
+        </div>
+        <!-- FIN EDUCACION -->
+    </aside>
+    <!-- FIN HABILIDADES Y EDUCACION-->
+
+    <!-- INICIO EXPERIENCIAS LABORALES-->
+    <article id="mainElement" class="main">
+        <h3>
+            Experiencia laboral
+        </h3>
+
+        <br>
+        <br>
+        <hr>
+        <br>
+
+        <!-- INICIO TRABAJO 1-->
+        <div class="job">
+            <div class="company">
+                <span>Globant - 01/03/2020 al 01/03/2023</span>
+            </div>
+            <br>
+            <div class="jobPosition">
+                <span>Programador Full-Stack</span>
+            </div>
+
+            <br>
+
+            <div class="jobDescription">
+                <ul>
+                    <li> <p>Desarrollo Front-End y Back-End de aplicaciones con Javascript y Typescript.</p></li>
+                    <li> <p>Test unitarios.</p></li>
+                    <li> <p>Gestión de base de datos relacionales (MySQL).</p></li>
+                </ul>
+            </div>
+        </div>
+        <!-- FIN TRABAJO 1 -->
+
+        <br>
+        
+        <!-- INICIO TRABAJO 2 -->
+        <div class="job">
+            <div class="company">
+                <span>Accenture - 15/06/2018 al 20/02/2020</span>
+            </div>
+
+            <br>
+
+            <div class="jobPosition">
+                <span>Analista programador</span>
+            </div>
+            
+            <br>
+            <div class="jobDescription">
+                <ul>
+                    <li> <p>Diseño de aplicaciones a pedido del cliente.</p> </li>
+                    <li> <p>Soporte técnico.</p> </li>
+                    <li> <p>Testing de aplicaciones.</p> </li>
+                </ul>
+            </div>
+        </div>
+        <!-- FIN TRABAJO 2 -->
+
+        <br>
+
+        <!-- INICIO TRABAJO 3 -->
+        <div class="job">
+            <div class="company">
+                <span>Servicio técnico PC SRL - 30/09/2014 al 03/04/2018</span>
+            </div>
+
+            <br>
+
+            <div class="jobPosition">
+                <span>Técnico de computadoras</span>
+            </div>
+            
+            <br>
+            
+            <div class="jobDescription">
+                <ul>
+                    <li> <p>Diagnóstico y reparación de PCs</p> </li>
+                    <li> <p>Cableado e instalación de redes.</p> </li>
+                    <li> <p>Atención al cliente</p> </li>
+                </ul>
+            </div>
+        </div>
+        <!-- FIN TRABAJO 3 -->
+        
+        
+    </article>
+    <!-- FIN EXPERIENCIAS LABORALES-->
+
+    <!-- INICIO LINKS DE CONTACTO Y CAMBIO DE TEMA DE LA PAGINA -->
+    <footer class="footer"> 
+        <a href="mailto:pgonzalez@email.com"><i class="fa fa-envelope"> MAIL </i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square"> LINKEDIN </i></a>
+        <a href="https://www.github.com" target="_blank"><i class="fa fa-github"> GITHUB</i></a>
+        <button id="changeTheme" style="height:20px;width:70px;margin-left: 20px;">Tema</button>
+    </footer>
+    <!-- FIN LINKS DE CONTACTO Y CAMBIO DE TEMA DE LA PAGINA -->
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
