@@ -1,6 +1,6 @@
 # Proyecto final 'Argentina Programa 4.0' - Primeros pasos del desarrollo frontend.
 
-Elaboración de un CV utilizando HTML, CSS y Javascript.
+## Elaboración de un CV utilizando HTML, CSS y Javascript.
 
 <ins>Material adicional de apoyo e idea de maquetación</ins>
 
